@@ -2,7 +2,9 @@ package com.example.sicla;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class LoginCliente extends Activity {
 
@@ -19,4 +21,15 @@ public class LoginCliente extends Activity {
 		return true;
 	}
 
+	public void iniciocliente(View button) {
+		startActivity(new Intent(this, InicioCliente.class));
+	}
+	
+	public void menuprincipal(View button) {
+		startActivity(new Intent(this, MenuPrincipal.class));
+	}
+
+	public void cadastrocliente(View buttons){
+		startActivity(new Intent(this, CadastroCliente.class));
+	}
 }

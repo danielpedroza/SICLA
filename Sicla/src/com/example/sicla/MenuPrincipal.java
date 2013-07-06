@@ -13,6 +13,8 @@ public class MenuPrincipal extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menuprincipal);
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -21,8 +23,12 @@ public class MenuPrincipal extends Activity {
 		return true;
 	}
 	
-	public void onClick(View V) {
-		Intent intent = new Intent(this, LoginCliente.class);
-		startActivity(intent);
+	public void logincliente(View button) {
+		startActivity(new Intent(this, LoginCliente.class));
 	}
+	
+	public void loginmotorista(View buttons){
+		startActivity(new Intent(this, LoginMotorista.class));
+	}
+	
 }

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".InicioMotorista" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="139dp"
+            android:layout_height="120dp"
+            android:layout_x="80dp"
+            android:layout_y="-20dp"
+            android:src="@drawable/sicla" />
+
+        <QuickContactBadge
+            android:id="@+id/quickContactBadge1"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_x="10dp"
+            android:layout_y="87dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="56dp"
+            android:layout_y="100dp"
+            android:text="Usuário"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/Button01"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="80dp"
+            android:layout_y="136dp"
+            android:text="Rota"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="12dp"
+            android:layout_y="134dp"
+            android:text="Início"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/Button02"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="144dp"
+            android:layout_y="136dp"
+            android:text="Estado"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/Button03"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="216dp"
+            android:layout_y="136dp"
+            android:text="Contato"
+            android:textSize="12dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_x="21dp"
+            android:layout_y="186dp" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar01"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_x="20dp"
+            android:layout_y="217dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="188dp"
+            android:layout_y="185dp"
+            android:text="Entregues"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="189dp"
+            android:layout_y="218dp"
+            android:text="Falta"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="24dp"
+            android:layout_y="256dp"
+            android:text="Tempo de Descanso"
+            android:textSize="17dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_x="23dp"
+            android:layout_y="278dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_x="218dp"
+            android:layout_y="392dp"
+            android:text="Sair"
+            android:textSize="12dp" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>

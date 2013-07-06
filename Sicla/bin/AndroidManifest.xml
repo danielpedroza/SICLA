@@ -34,6 +34,11 @@
         <activity
             android:name="com.example.sicla.InicioCliente"
             android:label="@string/title_activity_inicio_cliente" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.sicla.PedidosCliente"
@@ -50,6 +55,56 @@
         <activity
             android:name="com.example.sicla.LoginMotorista"
             android:label="@string/title_activity_login_motorista" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sicla.FreteCliente"
+            android:label="@string/title_activity_frete_cliente" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sicla.ContatoCliente"
+            android:label="@string/title_activity_contato_cliente" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sicla.CadastroCliente"
+            android:label="@string/title_activity_cadastro_cliente" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sicla.CadastroMotorista"
+            android:label="@string/title_activity_cadastro_motorista" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sicla.InicioMotorista"
+            android:label="@string/title_activity_inicio_motorista" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

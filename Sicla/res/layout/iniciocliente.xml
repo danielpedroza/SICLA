@@ -1,5 +1,12 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    
+    >
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,91 +17,136 @@
 
     <AbsoluteLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="139dp"
             android:layout_height="120dp"
             android:layout_x="80dp"
-            android:layout_y="4dp"
+            android:layout_y="-20dp"
             android:src="@drawable/sicla" />
 
         <QuickContactBadge
             android:id="@+id/quickContactBadge1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_x="18dp"
-            android:layout_y="129dp" />
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_x="10dp"
+            android:layout_y="87dp" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="72dp"
-            android:layout_y="140dp"
+            android:layout_x="56dp"
+            android:layout_y="100dp"
             android:text="Usuário"
-            android:textSize="16dp" />
+            android:textSize="14dp" />
 
-        <LinearLayout
-            android:layout_width="231dp"
-            android:layout_height="92dp"
-            android:layout_x="18dp"
-            android:layout_y="176dp"
-            android:orientation="vertical" >
-        </LinearLayout>
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="8dp"
+            android:layout_y="140dp"
+            android:text="Início"
+            android:textSize="12dp" />
 
-        <TabHost
-            android:id="@android:id/tabhost"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_x="14dp"
-            android:layout_y="174dp" >
+        <Button
+            android:id="@+id/Button01"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="66dp"
+            android:layout_y="140dp"
+            android:text="Todos"
+            android:textSize="12dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
+        <Button
+            android:id="@+id/Button03"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="208dp"
+            android:layout_y="140dp"
+            android:text="Entregues"
+            android:textSize="12dp" />
 
-                <TabWidget
-                    android:id="@android:id/tabs"
-                    android:layout_width="284dp"
-                    android:layout_height="wrap_content" >
-                </TabWidget>
+        <Button
+            android:id="@+id/Button02"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="127dp"
+            android:layout_y="140dp"
+            android:text="Pendentes"
+            android:textSize="12dp" />
 
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+        <Button
+            android:id="@+id/Button04"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="7dp"
+            android:layout_y="199dp"
+            android:text="Status"
+            android:textSize="12dp" />
 
-                    <LinearLayout
-                        android:id="@+id/Início"
-                        android:layout_width="147dp"
-                        android:layout_height="328dp" >
+        <Button
+            android:id="@+id/Button05"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="8dp"
+            android:layout_y="249dp"
+            android:text="Frete"
+            android:textSize="12dp" 
+            android:onClick="fretecliente" />
 
-                    </LinearLayout>
+        <Button
+            android:id="@+id/Button06"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="8dp"
+            android:layout_y="296dp"
+            android:text="Editar"
+            android:textSize="12dp" />
 
-                    <LinearLayout
-                        android:id="@+id/Todos"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-                    </LinearLayout>
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="182dp"
+            android:layout_x="70dp"
+            android:layout_y="196dp"
+            android:ems="10"
+            android:text="Olá Usuário                       Você tem um novo pedido" />
 
-                    <LinearLayout
-                        android:id="@+id/Pendentes"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-                    </LinearLayout>
-                    
-                     <LinearLayout
-                        android:id="@+id/Entregues"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-        </TabHost>
+        <Button
+            android:id="@+id/Button07"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="8dp"
+            android:layout_y="342dp"
+            android:text="Contato"
+            android:textSize="12dp"
+            android:onClick="contatocliente" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_x="234dp"
+            android:layout_y="378dp"
+            android:text="Sair"
+            android:textSize="12dp" 
+            android:onClick="logincliente"/>
 
     </AbsoluteLayout>
 
 </RelativeLayout>
+</ScrollView>
