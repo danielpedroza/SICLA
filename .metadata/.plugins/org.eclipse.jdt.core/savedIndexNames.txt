@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Users\Daniel Pedroza\Documents\Ciência da Computação\LPIII - Android\Projeto\.metadata\.plugins\org.eclipse.jdt.core
+1249862817.index
+2751382638.index
+3352491446.index
+744086127.index
