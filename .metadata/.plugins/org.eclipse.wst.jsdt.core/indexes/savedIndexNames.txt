@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\Daniel Pedroza\Documents\Ciência da Computação\LPIII - Android\Projeto\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4130531236.index
+1042377016.index
+1108499909.index
+3324080267.index
+3644135642.index

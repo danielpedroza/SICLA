@@ -1,0 +1,64 @@
+package com.example.sicla;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class FreteCliente extends Activity {
+
+	TextView cepTx = (TextView)findViewById(R.id.cep_tx);
+	TextView valordPTx = (TextView)findViewById(R.id.valorP_tx);
+	TextView dimTx = (TextView)findViewById(R.id.dim_tx);
+	Button calcbt = (Button)findViewById(R.id.Calcular);
+	EditText cepEdit = (EditText)findViewById(R.id.editTxCep);
+	EditText valEdit = (EditText)findViewById(R.id.editTxValorP);
+	EditText dimEdit = (EditText)findViewById(R.id.editTxDim);
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		setContentView(R.layout.fretecliente);
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		
+		if(TelaPreferencias.ehSemFrete(this)){
+			cepTx.setVisibility(View.INVISIBLE);
+			valordPTx.setVisibility(View.INVISIBLE);
+			dimTx.setVisibility(View.INVISIBLE);
+			calcbt.setVisibility(View.INVISIBLE);
+			cepEdit.setVisibility(View.INVISIBLE);
+			valEdit.setVisibility(View.INVISIBLE);
+			dimEdit.setVisibility(View.INVISIBLE);
+			
+			
+		}
+		System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.frete_cliente, menu);
+		return true;
+	}
+	
+	public void iniciocliente(View button) {
+		startActivity(new Intent(this, InicioCliente.class));
+	}
+
+	public void contatocliente(View button) {
+		startActivity(new Intent(this, ContatoCliente.class));
+	}
+	
+	public void logincliente(View button) {
+		startActivity(new Intent(this, LoginCliente.class));
+	}
+	
+	
+}

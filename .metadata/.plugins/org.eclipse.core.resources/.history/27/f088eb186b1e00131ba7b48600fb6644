@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TelaPreferencias" >
+
+    <AbsoluteLayout
+        android:id="@+id/absoluteLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </AbsoluteLayout>
+
+    <CheckBox
+        android:id="@+id/sem_frente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/absoluteLayout1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Sem Frete" />
+    
+    <CheckBoxPreference 
+     
+     android:key="sem_frete"
+     android:title="Sem Frete"
+     android:summary="Não mostrar calculo para frete"
+     android:defaultValue="false" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="139dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/sicla" />
+    
+    
+</PreferenceScreen>
+</RelativeLayout>
+
+</ScrollView>

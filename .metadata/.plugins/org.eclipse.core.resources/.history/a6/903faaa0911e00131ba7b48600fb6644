@@ -1,0 +1,33 @@
+package com.example.sicla;
+
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceManager;
+import android.app.Activity;
+import android.content.Context;
+import android.view.Menu;
+
+public class TelaPreferencias extends PreferenceActivity {
+
+	private static final String FRETE = "frete";
+	private static final boolean FRETE_DEF = false;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		addPreferencesFromResource(R.layout.telapreferencias);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.tela_preferencias, menu);
+		return true;
+	}
+	
+	
+	public static boolean ehSemFrete(Context context){ System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+		return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(FRETE, FRETE_DEF); System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+	}
+
+}
